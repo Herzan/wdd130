@@ -1,66 +1,84 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Define CSS variables */
-:root {
-  --primary-color: #005792;
-  --secondary-color: #ffcb05;
-  --text-color: #333;
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Apply Roboto font to entire page */
-body {
-  font-family: 'Roboto', sans-serif;
+/* Basic styling for header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
 }
 
-/* Styling headings and paragraphs */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
+.header-grid {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
 }
 
-p {
-  color: var(--text-color);
+/* Basic styling for navigation */
+nav ul {
+  list-style-type: none;
 }
 
-/* Remove underlines from social media links */
-.sociallinks a {
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
   text-decoration: none;
 }
 
-/* Limit entire width of the page */
-body {
-  max-width: 1200px; /* Adjust as needed */
-  margin: 0 auto;
+/* Basic styling for sections */
+section {
+  padding: 20px;
 }
 
-/* Style the Hero Container */
-.hero {
-  position: relative;
+/* Styling for adventures section */
+#adventures {
+  background-color: #f4f4f4;
 }
 
-.hero img {
-  display: block;
+.adventure-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adventure-grid figure {
+  margin-right: 20px;
+}
+
+.adventure-grid figure img {
   width: 100%;
   height: auto;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hero article {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+/* Basic styling for footer */
+footer {
+  background-color: #333;
+  color: white;
   padding: 20px;
+  text-align: right;
 }
 
-.hero article img {
-  float: right;
-  margin-left: 20px;
+.social-icons {
+  list-style-type: none;
+}
+
+.social-icons li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.social-icons li img {
+  width: 30px;
+  height: 30px;
 }
