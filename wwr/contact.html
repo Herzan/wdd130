@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+}
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="image/R.png" width="100" alt="Awesome Rafting Logo">
+        </a>
+        <nav>
+            <a href="wwr/about.html">Home</a>
+            <a href="wwr/index.html">Rafting Website</a>
+            <a href="wwr/site-plan-rafting.html">Site Plan</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </nav>
+    </header>
+    <main>
+
+         <section class="company-info">
+            <h2>Company Information</h2>
+            <p>Address: 123 River Rd, Adventure City</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@raftingadventures.com</p>
+            <!-- Embedded Google Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-73.987654!3d40.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ4JzQwLjIiTiA3M8KwMTYnNDUuMSJX!5e0!3m2!1sen!2sus!4v1589999999999!5m2!1sen!2sus" allowfullscreen></iframe>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="image/employee1.jpg" width="200" alt="Employee 1">
+                <p>John Doe<br>Adventure Guide</p>
+            </div>
+            <!-- Repeat for other employees -->
+        </section>
+
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" />
+                </li>
+                <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
+            </ul>
+        </form>
+    </main>
+    <footer>
+        <p>©️2024 🌴 {Herzan Carcache Huerta} 🌴 [Managua, Nicaragua]</p>
+        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="image/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="image/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank"> 
+                <img src="image/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script>
+        // JavaScript for form submission and feedback
+        const form = document.getElementById('contact-form');
+        const feedback = document.getElementById('feedback');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // You can perform form validation here if needed
+
+            // Simulate form submission with a delay for demonstration
+            setTimeout(() => {
+                feedback.textContent = 'Your message has been sent!';
+                feedback.style.display = 'block';
+                form.reset();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
