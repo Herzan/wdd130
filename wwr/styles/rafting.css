@@ -1,0 +1,84 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+/* Basic styling for navigation */
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Basic styling for sections */
+section {
+  padding: 20px;
+}
+
+/* Styling for adventures section */
+#adventures {
+  background-color: #f4f4f4;
+}
+
+.adventure-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adventure-grid figure {
+  margin-right: 20px;
+}
+
+.adventure-grid figure img {
+  width: 100%;
+  height: auto;
+}
+
+/* Basic styling for footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: right;
+}
+
+.social-icons {
+  list-style-type: none;
+}
+
+.social-icons li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.social-icons li img {
+  width: 30px;
+  height: 30px;
+}
