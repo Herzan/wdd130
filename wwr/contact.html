@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <style>
+        main{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+        }
         form {
   /* Center the form on the page */
   margin: 0 auto;
@@ -15,6 +19,17 @@
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 1em;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.company-info{
+    grid-column: 1/2;
+}
+.employee-profiles{
+    grid-column: 1/2; 
+}
+#feedback{
+    grid-column: 1/2;  
 }
 
 ul {
@@ -85,6 +100,9 @@ button {
 .moveDown {
     margin-top: 3em;
 }
+.contact_footer{
+    text-align:left;
+}
     </style>
 </head>
 <body>
@@ -141,7 +159,7 @@ button {
             </ul>
         </form>
     </main>
-    <footer>
+    <footer class="contact_footer">
         <p>©️2024 🌴 {Herzan Carcache Huerta} 🌴 [Managua, Nicaragua]</p>
         <p><a href="site-plan-rafting.html">Site Plan</a></p>
         <p><a href="contact.html">Contact Us</a></p>
