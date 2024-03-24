@@ -10,7 +10,7 @@
 
 /* Basic styling for header */
 header {
-  background-color: #333;
+  background-color: #09bff7fd;
   color: white;
   padding: 20px;
 }
@@ -63,7 +63,7 @@ section {
 
 /* Basic styling for footer */
 footer {
-  background-color: #333;
+  background-color: #333333;
   color: white;
   padding: 20px;
   text-align: right;
@@ -81,4 +81,24 @@ footer {
 .social-icons li img {
   width: 30px;
   height: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.social img {
+  width: 30px; /* Adjust the size of social icons as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust the spacing between social icons */
 }
