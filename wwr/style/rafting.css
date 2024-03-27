@@ -1,104 +1,87 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* Resetting default margin and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Basic styling for header */
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header styles */
 header {
-  background-color: #09bff7fd;
-  color: white;
-  padding: 20px;
-}
-
-.header-grid {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
   align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Example background color */
 }
 
-/* Basic styling for navigation */
+.logo img {
+  max-width: 100%;
+}
+
 nav ul {
-  list-style-type: none;
+  display: flex;
+  list-style: none;
 }
 
 nav ul li {
-  display: inline;
   margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
+  color: #333;
 }
 
-/* Basic styling for sections */
-section {
+/* History section styles */
+#history {
   padding: 20px;
 }
 
-/* Styling for adventures section */
+/* Adventures section styles */
 #adventures {
-  background-color: #f4f4f4;
+  padding: 20px;
 }
 
-.adventure-grid {
+.adventure-gallery {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-top: 20px;
 }
 
-.adventure-grid figure {
-  margin-right: 20px;
+.adventure-gallery figure {
+  text-align: center;
 }
 
-.adventure-grid figure img {
-  width: 100%;
-  height: auto;
+.adventure-gallery figcaption {
+  margin-top: 10px;
 }
 
-/* Basic styling for footer */
+/* Footer styles */
 footer {
-  background-color: #333333;
-  color: white;
+  background-color: #333;
+  color: #fff;
   padding: 20px;
   text-align: right;
 }
 
 .social-icons {
-  list-style-type: none;
+  display: flex;
 }
 
-.social-icons li {
-  display: inline;
+.social-icons a {
   margin-left: 10px;
 }
 
-.social-icons li img {
+.social-icons img {
   width: 30px;
   height: 30px;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-left {
-  text-align: left;
-}
-
-.footer-right {
-  text-align: right;
-}
-
-.social img {
-  width: 30px; /* Adjust the size of social icons as needed */
-  height: auto;
-  margin-right: 10px; /* Adjust the spacing between social icons */
 }
