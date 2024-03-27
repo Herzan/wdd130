@@ -1,31 +1,35 @@
+/* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styles */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  background-color: #f8f8f8;
 }
 
-/* Header styles */
 header {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 20px;
-  background-color: #f0f0f0; /* Example background color */
+  background-color: #333;
+  color: #fff;
 }
 
 .logo img {
-  max-width: 100%;
+  max-width: 100px;
+}
+
+h1 {
+  margin: 0;
 }
 
 nav ul {
+  list-style-type: none;
   display: flex;
-  list-style: none;
 }
 
 nav ul li {
@@ -38,34 +42,33 @@ nav ul li:last-child {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
-/* History section styles */
-#history {
+.history, .adventures {
   padding: 20px;
 }
 
-/* Adventures section styles */
-#adventures {
-  padding: 20px;
-}
-
-.adventure-gallery {
+.adventures-gallery {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
 }
 
-.adventure-gallery figure {
+.adventures-gallery figure {
+  margin-right: 20px;
+}
+
+.adventures-gallery figure:last-child {
+  margin-right: 0;
+}
+
+.adventures-gallery img {
+  max-width: 100%;
+}
+
+.adventures-gallery figcaption {
   text-align: center;
 }
 
-.adventure-gallery figcaption {
-  margin-top: 10px;
-}
-
-/* Footer styles */
 footer {
   background-color: #333;
   color: #fff;
@@ -73,15 +76,7 @@ footer {
   text-align: right;
 }
 
-.social-icons {
-  display: flex;
-}
-
-.social-icons a {
+.social img {
+  max-width: 30px;
   margin-left: 10px;
-}
-
-.social-icons img {
-  width: 30px;
-  height: 30px;
 }
