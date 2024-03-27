@@ -135,28 +135,56 @@ button {
                 <img src="image/employee1.jpg" width="200" alt="Employee 1">
                 <p>John Doe<br>Adventure Guide</p>
             </div>
-            <!-- Repeat for other employees -->
+            <div class="employee">
+                <img src="/wwr/image/1.png" width="200" alt="Employee 2">
+                <p>Dwayne Smith - Adventure Specialist</p>
+            </div>
+            <div class="employee">
+                <img src="/wwr/image/2.jpg" width="200" alt="Employee 3">
+                <p>Sam Johnson - Safety Officer</p>
+            </div>
+            <div class="employee">
+                <img src="/wwr/image/3.jpg" width="200" height="200" alt="Employee 4">
+                <p>Sam Adams - Equipment Manager</p>
+            </div>
+            <div class="employee">
+                <img src="/wwr/image/4.jpg" width="200" height="200" alt="Employee 5">
+                <p>David Lee - River Guide</p>
+            </div>
+            <div class="employee">
+                <img src="/wwr/image/5.jpg" width="200" height="200" alt="Employee 6">
+                <p>Lisa Brown - Customer Relations</p>
+            </div>
+            <div class="employee">
+                <img src="/wwr/image/6.jpg" width="200" height="200" alt="Employee 7">
+                <p>Michael Scott - Marketing Manager</p>
+            </div>
         </section>
 
         <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <ul>
-                <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_email" />
-                </li>
-                <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Send your message</button>
-                </li>
-            </ul>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="purpose">Purpose of Message:</label><br>
+            <input type="radio" id="general" name="purpose" value="General Inquiry">
+            <label for="general">General Inquiry</label><br>
+            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+            <label for="reservation">Reservation Question</label><br>
+            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+            <label for="suggestion">Website Suggestion</label><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+            <input type="checkbox" id="newsletter" name="newsletter" value="Subscribe">
+            <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+
+            <input type="submit" value="Send Message">
+        </form>
         </form>
     </main>
     <footer class="contact_footer">
