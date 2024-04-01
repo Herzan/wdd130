@@ -1,141 +1,91 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 /* Resetting default margin and padding */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Basic styling for header */
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
 header {
-  background-color: #333;
-  color: white;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
 }
 
-.header-grid {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
+.logo {
+    font-size: 24px;
 }
 
-/* Basic styling for navigation */
+nav {
+    display: flex;
+}
+
 nav ul {
-  list-style-type: none;
+    list-style-type: none;
+    display: flex;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+nav li {
+    margin-right: 20px;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
+nav a {
+    color: white;
+    text-decoration: none;
 }
 
-/* Basic styling for sections */
+/* Section styles */
 section {
-  padding: 20px;
+    padding: 40px;
 }
 
-/* Styling for adventures section */
-#adventures {
-  background-color: #f4f4f4;
+.history, .adventures {
+    background-color: #f2f2f2;
 }
 
-.adventure-grid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.adventures {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.adventure-grid figure {
-  margin-right: 20px;
+.adventures figure {
+    margin-right: 20px;
 }
 
-.adventure-grid figure img {
-  width: 100%;
-  height: auto;
+.adventures img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+figcaption {
+    margin-top: 10px;
+    text-align: center;
 }
 
-.company-info, .employee-profiles, .contact-form {
-  margin-bottom: 30px;
-}
-
-.employee {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.employee img {
-  max-width: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.contact-form input[type="radio"] {
-  margin-right: 5px;
-}
-
-.contact-form input[type="checkbox"] {
-  margin-right: 5px;
-}
-
-.contact-form input[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.contact-form input[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-/* Basic styling for footer */
+/* Footer styles */
 footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: right;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: right;
 }
 
 .social-icons {
-  list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .social-icons li {
-  display: inline;
-  margin-left: 10px;
+    display: inline-block;
+    margin-left: 10px;
 }
-
-.social-icons li img {
-  width: 30px;
-  height: 30px;
-}
-

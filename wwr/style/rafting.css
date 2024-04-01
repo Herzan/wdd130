@@ -1,82 +1,141 @@
-/* Reset some default styles */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Resetting default margin and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+/* Basic styling for header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
 }
 
-header {
+.header-grid {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
 }
 
-.logo img {
-  max-width: 100px;
-}
-
-h1 {
-  margin: 0;
-}
-
+/* Basic styling for navigation */
 nav ul {
   list-style-type: none;
-  display: flex;
 }
 
 nav ul li {
+  display: inline;
   margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
 }
 
 nav ul li a {
+  color: white;
   text-decoration: none;
-  color: #fff;
 }
 
-.history, .adventures {
+/* Basic styling for sections */
+section {
   padding: 20px;
 }
 
-.adventures-gallery {
-  display: flex;
+/* Styling for adventures section */
+#adventures {
+  background-color: #f4f4f4;
 }
 
-.adventures-gallery figure {
+.adventure-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adventure-grid figure {
   margin-right: 20px;
 }
 
-.adventures-gallery figure:last-child {
-  margin-right: 0;
+.adventure-grid figure img {
+  width: 100%;
+  height: auto;
 }
 
-.adventures-gallery img {
-  max-width: 100%;
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.adventures-gallery figcaption {
+.company-info, .employee-profiles, .contact-form {
+  margin-bottom: 30px;
+}
+
+.employee {
   text-align: center;
+  margin-bottom: 20px;
 }
 
+.employee img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-form input[type="radio"] {
+  margin-right: 5px;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Basic styling for footer */
 footer {
   background-color: #333;
-  color: #fff;
+  color: white;
   padding: 20px;
   text-align: right;
 }
 
-.social img {
-  max-width: 30px;
+.social-icons {
+  list-style-type: none;
+}
+
+.social-icons li {
+  display: inline;
   margin-left: 10px;
 }
+
+.social-icons li img {
+  width: 30px;
+  height: 30px;
+}
+
