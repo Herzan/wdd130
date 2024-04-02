@@ -46,7 +46,11 @@ nav a {
 section {
     padding: 40px;
 }
-
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
 .history, .adventures {
     background-color: #f2f2f2;
 }
