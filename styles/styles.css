@@ -1,55 +1,31 @@
-body {
-  font-family: Arial, sans-serif;
+/* Universal selector */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-header,
-.grid,
-footer {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
-header {
-  text-align: center;
-  padding: 1rem 0;
-}
-
-nav {
-  background-color: steelblue;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-nav a {
-  display: block;
-  padding: 0.5rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff;
-}
-
-h1 {
-  border-bottom: 2px solid black;
-}
-
-.grid {
-  display: grid;
-  align-items: center;
-}
-
-main {
-  grid-column: 2/3;
+/* Class Selectors */
+.box {
   margin: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+  background-color: #ddd;
+  color: #000;
 }
 
+/* Profile image floating */
+main .profile-image {
+  float: right;
+}
+
+/* Absolute positioning for heading in aside */
 aside {
-  width: 20rem;
   position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
+}
+
+aside h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
