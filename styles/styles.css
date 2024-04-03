@@ -1,11 +1,5 @@
-/* Universal selector */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Class Selectors */
+/* Box Class Selector */
 .box {
   margin: 1rem;
   padding: 1rem;
@@ -14,16 +8,17 @@
   color: #000;
 }
 
-/* Profile image floating */
-main .profile-image {
+/* Main Image Float */
+main img {
   float: right;
 }
 
-/* Absolute positioning for heading in aside */
+/* Aside Position */
 aside {
   position: relative;
 }
 
+/* Aside h2 Position */
 aside h2 {
   position: absolute;
   top: 10px;
