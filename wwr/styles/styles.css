@@ -209,20 +209,3 @@ footer .social img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
-/* Apply margin and max-width properties separately */
-header, footer, .grid {
-    margin: 0 auto;
-    max-width: 840px;
-}
-
-/* Define properties for .grid class */
-.grid {
-    display: grid;
-    align-items: center;
-}
-
-/* Existing styles for aside */
-aside {
-    position: relative;
-    /* Add any other styles specific to the aside */
-}
