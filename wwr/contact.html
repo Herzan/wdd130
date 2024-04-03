@@ -4,109 +4,12 @@
  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Rafting Adventures</title>
+    <title>Contact Us - - Rafting Project</title>
     <meta name="description" content="Contact us for inquiries, reservations, and website suggestions.">
     <link rel="stylesheet" href="style/rafting.css">
-    
-    <style>
-        main{
-            display:grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        form {
-  /* Center the form on the page */
-  margin: 0 auto;
-  width: 400px;
-  /* Form outline */
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-.company-info{
-    grid-column: 1/2;
-}
-.employee-profiles{
-    grid-column: 1/2; 
-}
-#feedback{
-    grid-column: 1/2;  
-}
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-form li + li {
-  margin-top: 1em;
-}
-
-label {
-  /* Uniform size & alignment */
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-}
-
-input,
-textarea {
-  /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
-  font: 1em sans-serif;
-
-  /* Uniform text field size */
-  width: 300px;
-  box-sizing: border-box;
-
-  /* Match form field borders */
-  border: 1px solid #999;
-}
-
-input:focus,
-textarea:focus {
-  /* Additional highlight for focused elements */
-  border-color: #000;
-}
-
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: top;
-
-  /* Provide space to type some text */
-  height: 5em;
-}
-
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
-}
-
-button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-  margin-left: 0.5em;
-}
-#feedback {
-    background-color: antiquewhite;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: .5em;
-    /* make this element invisible until we are ready for it */
-    display: none;      
-}
-.moveDown {
-    margin-top: 3em;
-}
-.contact_footer{
-    text-align:left;
-}
-    </style>
 </head>
+
 <body>
     <header>
         <a id="logo_link" href="index.html">
@@ -165,29 +68,29 @@ button {
 
         <div id="feedback"></div>
         <form action="submit_form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="purpose">Purpose of Message:</label><br>
-            <input type="radio" id="general" name="purpose" value="General Inquiry">
-            <label for="general">General Inquiry</label><br>
-            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-            <label for="reservation">Reservation Question</label><br>
-            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-            <label for="suggestion">Website Suggestion</label><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-
-            <input type="checkbox" id="newsletter" name="newsletter" value="Subscribe">
-            <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
-
-            <input type="submit" value="Send Message">
-        </form>
-        </form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="general-inquiry">Purpose of Message:</label><br>
+                <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
+                <label for="general-inquiry">General Inquiry</label><br>
+                <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
+                <label for="reservation-question">Reservation Question</label><br>
+                <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
+                <label for="website-suggestion">Website Suggestion</label><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                
+                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                <label for="newsletter">Subscribe me to the monthly newsletter</label><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+     
     </main>
     <footer class="contact_footer">
         <p>©️2024 🌴 {Herzan Carcache Huerta} 🌴 [Managua, Nicaragua]</p>
@@ -206,7 +109,6 @@ button {
         </div>
     </footer>
     <script>
-        // JavaScript for form submission and feedback
         const form = document.getElementById('contact-form');
         const feedback = document.getElementById('feedback');
 
