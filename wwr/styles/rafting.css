@@ -24,6 +24,13 @@ header {
     font-size: 24px;
 }
 
+nav{
+    display: flex;
+}
+nav a {
+    margin-right: 20px;
+}
+
 .navigation {
     display: flex;
 }
@@ -94,7 +101,7 @@ footer {
     margin-left: 10px;
 }
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card, .camping-card, .rapids-card, .mountains-card, .rafting-card  {
     margin: 200px 0;
 }
 .card-img {
@@ -128,8 +135,30 @@ footer {
     grid-column: 8/10;
     grid-row: 2/3;
 }
-.mountains {
-    grid-column: 2/7;
-    grid-row: 5/8;
-    box-shadow: 5px 5px 10px #6f7364;
+.mountains-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+   
 }
+.rafting-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+   
+}
+
+.adventure-grid{
+    display: flex;
+
+}
+.adventure-grid section{
+    padding: 10px;
+    width: 20%;
+}
+.care-img{
+    width: 100%;
+}
+
+.history_box{
+    display: flex;
+}
+/* .adventure-grids section img */
