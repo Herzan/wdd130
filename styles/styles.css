@@ -1,10 +1,4 @@
-/* Universal Selector */
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Class Selectors */
 /* Box Class Selector */
 .box {
   margin: 1rem;
