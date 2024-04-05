@@ -102,7 +102,7 @@ footer {
 }
 
 .rivers-card, .camping-card, .rapids-card, .mountains-card, .rafting-card  {
-    margin: 200px 0;
+    margin: 100px 0;
 }
 .card-img {
     border: 10px solid #4A4E69;
@@ -148,6 +148,7 @@ footer {
 
 .adventure-grid{
     display: flex;
+    width: 100px;
 
 }
 .adventure-grid section{
