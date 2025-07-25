@@ -4,10 +4,10 @@
  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Contact Us - Nicaragua Adventure</title>
-    <meta name="description" content="Contact Nicaragua Adventure for bookings, inquiries, and more information." />
-    <meta name="author" content="Herzan Carcache Huerta" />
-    <link rel="stylesheet" href="styles/rafting.css">
+     <meta name="description" content="Contact Nicaragua Adventure for bookings, inquiries, and more information.">
+    <meta name="author" content="Herzan Carcache Huerta">
+    <title>Contact Us - Nicaragua Adventure</title>
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -30,14 +30,23 @@
         </nav>
     </header>
     <main>
+    <h1>Contact Nicaragua Adventure</h1>
+    <p>Reach out to us for bookings, questions, or any adventure-related inquiries.</p>
 
-         <section class="company-info">
-            <h1>Company Information</h1>
+           <section>
+            <h2>Our Location</h2>
             <p>Address: Calle La Calzada, de la Catedral 2 cuadras al este, Granada, Nicaragua</p>
             <p>Phone: +505 2552 1534</p>
             <p>Email: info@nicaraguadventures.com</p>
             <!-- Embedded Google Map -->
             <iframe src="https://www.google.com/maps?q=Calle+La+Calzada,+Granada,+Nicaragua&output=embed"
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
 
         <section class="employee-profiles">
@@ -72,35 +81,31 @@
             </div>
         </section>
 
-        <div id="feedback"></div>
-        <form action="submit_form.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-                
-                <label for="general-inquiry">Purpose of Message:</label><br>
-                <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
-                <label for="general-inquiry">General Inquiry</label><br>
-                <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
-                <label for="reservation-question">Reservation Question</label><br>
-                <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
-                <label for="website-suggestion">Website Suggestion</label><br>
-                
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
-                
-                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
-                <label for="newsletter">Subscribe me to the monthly newsletter</label><br>
-                
-                <button type="submit">Send Message</button>
-            </form>
+        <section>
+      <h2>Send Us a Message</h2>
+      <form action="thankyou.html" method="get">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <label>
+          <input type="checkbox" name="subscribe">
+          Please subscribe me to the monthly newsletter
+        </label><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
      
     </main>
     <footer class="contact_footer">
         <p>©️2025 🌴 {Herzan Carcache Huerta} 🌴 [Managua, Nicaragua]</p>
-        <p><a <a href="about.html">About Us</a></p>
+        <p><a href="about.html">About</a></p>
         <p><a href="contact.html">Contact Us</a></p>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
@@ -114,22 +119,5 @@
             </a>
         </div>
     </footer>
-    <script>
-        const form = document.getElementById('contact-form');
-        const feedback = document.getElementById('feedback');
-
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // You can perform form validation here if needed
-
-            // Simulate form submission with a delay for demonstration
-            setTimeout(() => {
-                feedback.textContent = 'Your message has been sent!';
-                feedback.style.display = 'block';
-                form.reset();
-            }, 1000);
-        });
-    </script>
 </body>
 </html>
