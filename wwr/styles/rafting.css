@@ -132,10 +132,10 @@ section {
 
 .map {
   width: 100%;
+  max-width: 600px;
   height: 450px;
   border: 0;
   display: block;
-  max-width: 600px;
   margin: 0 auto;
 }
 .card-img:hover {
