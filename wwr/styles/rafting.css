@@ -134,9 +134,9 @@ section {
   width: 100%;
   height: 450px;
   border: 0;
-  display: block; /* Optional for spacing */
-  max-width: 600px; /* Optional: limits size */
-  margin: 0 auto; /* Optional: centers the map */
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .card-img:hover {
     opacity: .6;
